@@ -125,7 +125,7 @@ class RepoLinkGenerator(
 
                 currentSubsNames.add(name)
                 val updatedFile =
-                    correctFile.copy(originalName = fixedName, nameSuffix = "$count")
+                    correctFile.copy(nameSuffix = "$count")
 
                 synchronized(currentCache) {
                     if (currentCache.subtitleCache.add(updatedFile)) {
